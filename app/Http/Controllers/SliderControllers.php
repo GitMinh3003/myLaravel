@@ -10,7 +10,7 @@ class SliderControllers extends Controller
     public function index() {
         $items = SliderModel::all();
         foreach($items as $item) {
-            echo $item->MoTa."<br>";
+            echo $item->tieude."<br>";
         }
     }
 }

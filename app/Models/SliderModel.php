@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class SliderModel extends Model
 {
-    protected $table = 'quangcao';
+    protected $table = 'tintuc';
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('slider', 'App\Http\Controllers\SliderControllers@index');
+// Route::get('user/{id}/profile', 'App\Http\Controllers\SliderControllers@index')->name('profile');
+Route::get('user/{user}', 'App\Http\Controllers\SliderControllers@index');

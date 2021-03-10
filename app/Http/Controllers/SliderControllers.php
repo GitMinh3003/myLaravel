@@ -15,7 +15,10 @@ class SliderControllers extends Controller
     //         return view('home',["val" => $val]);
     //     }
     // }
-    public function index(User $user) {
-        return view('home',['user' => $user]);
+    public function getXinChao($user) {
+        return view('form');
+    }
+    public function getTamBiet($ten,$namsinh) {
+        return "Tam biet toi ten la ".ucfirst($ten)." nam sinh ".$namsinh;
     }
 }

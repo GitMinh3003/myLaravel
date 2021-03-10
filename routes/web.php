@@ -14,5 +14,7 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::get('user/{id}/profile', 'App\Http\Controllers\SliderControllers@index')->name('profile');
-Route::get('user/{user}', 'App\Http\Controllers\SliderControllers@index');
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('xinchao/{user}','App\Http\Controllers\SliderControllers@getXinChao');
+    Route::get('tambiet/{ten}/{namsinh}','App\Http\Controllers\SliderControllers@getTamBiet');
+});
